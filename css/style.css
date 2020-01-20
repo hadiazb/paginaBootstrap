@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0;
 }
+/* ---------------------------------Estilos Place-time */
+#place-time img{
+  max-width: 100%;
+}
+#place-time{
+  background-color: #343a40;
+  color: white;
+}
 /* ---------------------------------Estilos de los botones */
 .btn-platzi{
   background-color: #97c93e;
