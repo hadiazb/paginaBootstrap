@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0;
 }
+/* ---------------------------------Estilos de los botones */
+.btn-platzi{
+  background-color: #97c93e;
+  color: white;
+}
+.btn-platzi:hover{
+  background-color: #82ad36;
+}
 /* ---------------------------------Estilos del Overlay */
 #carousel {
   position: relative;
@@ -15,6 +23,11 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  z-index: 1;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
 }
 /* ---------------------------------Estilos del Main */
 #main .carousel-inner img{
