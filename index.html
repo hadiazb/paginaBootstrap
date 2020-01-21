@@ -11,10 +11,10 @@
 
     <title>NavBar</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
     <!-- Header -->
     <header>
-      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./images/platzi-logo.png" alt="Logo de Platzi">
@@ -23,19 +23,19 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">La Conferencia</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#main">La Conferencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los Oradores</a>
+                <a class="nav-link" href="#speakers">Los Oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#place-time">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviertete en orador</a>
+                <a class="nav-link" href="#conviertete-en.orador">Conviertete en orador</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-platzi" href="#">Compra de Tickets</a>
@@ -88,7 +88,7 @@
     <section id="speakers" class="mt-4">
       <div class="container">
         <div class="row">
-          <div class="col text-center text-ippercase">
+          <div class="col text-center text-uppercase">
             <small>Conoce a los</small>
             <h2>Oradores</h2>
             </div>
@@ -166,11 +166,53 @@
         </div>
       </div>
     </section>
-
-
-
-
     <!-- /Lugar y fecha -->
+
+    <!-- Conviertete en speakers -->
+    <section id="conviertete-en.orador" class="pt-3 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small>Conviertete en un </small>
+            <h2>ORADOR</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anotate como orador para dar una charla <abbr data-toggle="tooltip" title="Charla de 5 minutos">ignite</abbr>
+            Cuentanos de que quieres hablar.
+          </div>
+        </div>
+        <div class="row">
+          <div class="co col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col form-group">
+                  <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
+                  <small class="form-text text-muted">
+                    Recuerda incluir un titulo para tu charla
+                  </small>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button" class="btn btn-platzi btn-block" name="button">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Conviertete en speakers -->
 
     <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
@@ -216,5 +258,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/js.js"></script>
   </body>
 </html>
